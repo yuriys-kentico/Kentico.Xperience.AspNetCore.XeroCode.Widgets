@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.resource>
+  <ResourceAuthor>Yuriy Sountsov</ResourceAuthor>
+  <ResourceDescription>Widgets made in the UI for Kentico Xperience 13.</ResourceDescription>
+  <ResourceDisplayName>Xero code widgets</ResourceDisplayName>
+  <ResourceGUID>d59bbcab-0e28-4171-a435-4cbe0a691beb</ResourceGUID>
+  <ResourceHasFiles>False</ResourceHasFiles>
+  <ResourceIsInDevelopment>True</ResourceIsInDevelopment>
+  <ResourceName>XeroCodeWidgets</ResourceName>
+  <ResourceVersion>0.1.0</ResourceVersion>
+  <ShowInDevelopment>False</ShowInDevelopment>
+</cms.resource>

@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <Version>0.1.0</Version>
+    <Product>Kentico Xperience Xero Code Widgets</Product>
+    <Authors>Yuriy Sountsov</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Clients\WidgetsClient\**" />
+    <EmbeddedResource Remove="Clients\WidgetsClient\**" />
+    <None Remove="Clients\WidgetsClient\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Clients\codicon.ttf" />
+    <None Remove="Clients\editor.worker.js" />
+    <None Remove="Clients\widgetsClient.css" />
+    <None Remove="Clients\widgetsClient.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Clients\codicon.ttf" />
+    <EmbeddedResource Include="Clients\editor.worker.js" />
+    <EmbeddedResource Include="Clients\widgetsClient.css" />
+    <EmbeddedResource Include="Clients\widgetsClient.js" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.15" />
+    <PackageReference Include="System.Reflection.Emit" Version="4.7.0" />
+    <ProjectReference Include="..\Kentico.Xperience.AspNetCore.XeroCode.Widgets.Core\Kentico.Xperience.AspNetCore.XeroCode.Widgets.Core.csproj" />
+    <ProjectReference Include="..\Kentico.Xperience.AspNetCore.XeroCode.Resources\Kentico.Xperience.AspNetCore.XeroCode.Resources.csproj" PrivateAssets="all" />
+    <ProjectReference Include="..\Kentico.Xperience.AspNetCore.XeroCode.Resources.Core\Kentico.Xperience.AspNetCore.XeroCode.Resources.Core.csproj" PrivateAssets="all" />
+  </ItemGroup>
+
+</Project>

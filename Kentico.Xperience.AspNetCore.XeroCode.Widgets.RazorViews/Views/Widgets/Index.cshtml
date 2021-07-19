@@ -1,0 +1,33 @@
+﻿@using Kentico.Web.Mvc
+@using Kentico.Content.Web.Mvc
+@using Kentico.Xperience.AspNetCore.XeroCode.Resources.Stores
+@using Kentico.Xperience.AspNetCore.XeroCode.Widgets.Localization
+
+@inject IResourcesStore resourcesStore
+
+@{
+    Layout = "_XeroCodeLayout";
+
+    var resources = resourcesStore.GetStrings(typeof(Resources), "en-us");
+    var resourcesJson = Json.Serialize(resources);
+
+    var endpoints = new
+    {
+      allRequest = Url.Kentico().AuthenticateUrlRaw("/xerocode/widgets/all"),
+      upsertRequest = Url.Kentico().AuthenticateUrlRaw("/xerocode/widgets/upsert"),
+      removeRequest = Url.Kentico().AuthenticateUrlRaw("/xerocode/widgets/remove"),
+      newPropertyRequest = Url.Kentico().AuthenticateUrlRaw("/xerocode/widgets/new/property"),
+      newWidgetRequest = Url.Kentico().AuthenticateUrlRaw("/xerocode/widgets/new/widget")
+    };
+    var endpointsJson = Json.Serialize(endpoints);
+}
+
+<div id="widgetsRoot">
+  @Html.HiddenFor(model => resourcesJson, new { id = "widgetsResources" })
+  @Html.HiddenFor(model => endpointsJson, new { id = "widgetsEndpoints" })
+</div>
+
+<script src=@Url.Action( "Get", "Resources", new { resourceName = "widgetsClient.js" })
+        type="text/javascript"></script>
+<link href=@Url.Action("Get", "Resources", new { resourceName = "widgetsClient.css" })
+      rel="stylesheet" />

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.uielement>
+  <ElementCheckModuleReadPermission>True</ElementCheckModuleReadPermission>
+  <ElementDisplayName>Xero code widgets</ElementDisplayName>
+  <ElementGUID>28750c38-2e09-4623-afef-acfb1017fbdd</ElementGUID>
+  <ElementIconClass>icon-app-widgets</ElementIconClass>
+  <ElementIconPath />
+  <ElementIsCustom>True</ElementIsCustom>
+  <ElementIsGlobalApplication>False</ElementIsGlobalApplication>
+  <ElementIsMenu>False</ElementIsMenu>
+  <ElementName>Widgets</ElementName>
+  <ElementOrder>22</ElementOrder>
+  <ElementParentID>
+    <CodeName>ContentManagementCategory</CodeName>
+    <GUID>72c0cefd-aa08-4a6a-b11c-2891ee14325a</GUID>
+    <ObjectType>cms.uielement</ObjectType>
+    <Parent>
+      <CodeName>CMS</CodeName>
+      <GUID>ce1a65a0-80dc-4c53-b0e7-bdecf0aa8c02</GUID>
+      <ObjectType>cms.resource</ObjectType>
+    </Parent>
+  </ElementParentID>
+  <ElementProperties>
+    <Data>
+      <DisplayBreadcrumbs>False</DisplayBreadcrumbs>
+    </Data>
+  </ElementProperties>
+  <ElementRequiresGlobalAdminPriviligeLevel>False</ElementRequiresGlobalAdminPriviligeLevel>
+  <ElementResourceID>
+    <CodeName>XeroCodeWidgets</CodeName>
+    <GUID>d59bbcab-0e28-4171-a435-4cbe0a691beb</GUID>
+    <ObjectType>cms.resource</ObjectType>
+  </ElementResourceID>
+  <ElementSize>0</ElementSize>
+  <ElementTargetURL>~/CMSModules/XeroCodeWidgets/Widgets.aspx</ElementTargetURL>
+  <ElementType>Url</ElementType>
+</cms.uielement>

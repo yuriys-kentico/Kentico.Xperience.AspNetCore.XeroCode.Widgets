@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.class>
+  <ClassCodeGenerationSettings>
+    <Data>
+      <NameSpace>XeroCode</NameSpace>
+    </Data>
+  </ClassCodeGenerationSettings>
+  <ClassDisplayName>Xero code widget</ClassDisplayName>
+  <ClassFormDefinition>
+    <form version="2">
+      <field column="WidgetID" columntype="integer" guid="d8262d76-57dd-4272-9547-4e3d777cda5b" isPK="true">
+        <properties>
+          <fieldcaption>WidgetID</fieldcaption>
+        </properties>
+      </field>
+      <field allowempty="true" column="WidgetName" columnsize="200" columntype="text" guid="e5cc381a-1646-4df2-b820-4676283fb7d6" system="true" visible="true">
+        <properties>
+          <fieldcaption>{$general.name$}</fieldcaption>
+        </properties>
+        <settings>
+          <AutoCompleteEnableCaching>False</AutoCompleteEnableCaching>
+          <AutoCompleteFirstRowSelected>False</AutoCompleteFirstRowSelected>
+          <AutoCompleteShowOnlyCurrentWordInCompletionListItem>False</AutoCompleteShowOnlyCurrentWordInCompletionListItem>
+          <controlname>TextBoxControl</controlname>
+          <FilterMode>False</FilterMode>
+          <Trim>False</Trim>
+        </settings>
+      </field>
+      <field allowempty="true" column="WidgetDescription" columntype="longtext" guid="e4ec2129-4d63-489f-a30b-5d290233eb98" system="true" visible="true">
+        <properties>
+          <fieldcaption>{$general.description$}</fieldcaption>
+        </properties>
+        <settings>
+          <AutoCompleteEnableCaching>False</AutoCompleteEnableCaching>
+          <AutoCompleteFirstRowSelected>False</AutoCompleteFirstRowSelected>
+          <AutoCompleteShowOnlyCurrentWordInCompletionListItem>False</AutoCompleteShowOnlyCurrentWordInCompletionListItem>
+          <controlname>TextAreaControl</controlname>
+          <FilterMode>False</FilterMode>
+          <Wrap>True</Wrap>
+        </settings>
+      </field>
+      <field allowempty="true" column="WidgetIcon" columnsize="200" columntype="text" guid="60c8d048-6075-4dcc-8c80-02bf06bb10ef" system="true" visible="true">
+        <properties>
+          <defaultvalue>icon-app-widgets</defaultvalue>
+          <fieldcaption>{$general.icon$}</fieldcaption>
+        </properties>
+        <settings>
+          <controlname>FontIconSelector</controlname>
+        </settings>
+      </field>
+      <field allowempty="true" column="WidgetProperties" columntype="longtext" guid="7fdd5696-235a-4154-bbda-6b8cf989f0fd" system="true" visible="true">
+        <properties>
+          <fieldcaption>{$general.properties$}</fieldcaption>
+        </properties>
+        <settings>
+          <AutoCompleteEnableCaching>False</AutoCompleteEnableCaching>
+          <AutoCompleteFirstRowSelected>False</AutoCompleteFirstRowSelected>
+          <AutoCompleteShowOnlyCurrentWordInCompletionListItem>False</AutoCompleteShowOnlyCurrentWordInCompletionListItem>
+          <controlname>TextAreaControl</controlname>
+          <FilterMode>False</FilterMode>
+          <Wrap>True</Wrap>
+        </settings>
+      </field>
+      <field column="WidgetView" columntype="longtext" guid="a879c807-816c-41fa-bb9c-75fecd08290a" system="true" visible="true">
+        <properties>
+          <fieldcaption>View code</fieldcaption>
+        </properties>
+        <settings>
+          <controlname>LargeTextArea</controlname>
+        </settings>
+      </field>
+      <field column="WidgetGuid" columntype="guid" guid="ac9dacb1-8e09-4b25-b625-87a3fc8bbf1f" system="true">
+        <properties>
+          <fieldcaption>GUID</fieldcaption>
+        </properties>
+      </field>
+      <field column="WidgetLastModified" columnprecision="7" columntype="datetime" guid="e30cdcdd-89f1-4903-8942-b49efa250b7b" system="true">
+        <properties>
+          <fieldcaption>Last modified</fieldcaption>
+        </properties>
+      </field>
+    </form>
+  </ClassFormDefinition>
+  <ClassGUID>4317782f-4e7e-44fe-a5dc-087ef0896a9d</ClassGUID>
+  <ClassHasMetadata>False</ClassHasMetadata>
+  <ClassHasURL>False</ClassHasURL>
+  <ClassIsCoupledClass>True</ClassIsCoupledClass>
+  <ClassIsCustomTable>False</ClassIsCustomTable>
+  <ClassIsDocumentType>False</ClassIsDocumentType>
+  <ClassIsForm>False</ClassIsForm>
+  <ClassIsMenuItemType>False</ClassIsMenuItemType>
+  <ClassIsNavigationItem>False</ClassIsNavigationItem>
+  <ClassIsProduct>False</ClassIsProduct>
+  <ClassName>XeroCode.Widget</ClassName>
+  <ClassNodeNameSource />
+  <ClassResourceID>
+    <CodeName>XeroCodeWidgets</CodeName>
+    <GUID>d59bbcab-0e28-4171-a435-4cbe0a691beb</GUID>
+    <ObjectType>cms.resource</ObjectType>
+  </ClassResourceID>
+  <ClassSearchSettings>
+    <search />
+  </ClassSearchSettings>
+  <ClassShowAsSystemTable>False</ClassShowAsSystemTable>
+  <ClassShowTemplateSelection>False</ClassShowTemplateSelection>
+  <ClassTableName>XeroCode_Widget</ClassTableName>
+  <ClassUsePublishFromTo>False</ClassUsePublishFromTo>
+  <ClassUsesPageBuilder>False</ClassUsesPageBuilder>
+  <ClassUsesVersioning>False</ClassUsesVersioning>
+</cms.class>

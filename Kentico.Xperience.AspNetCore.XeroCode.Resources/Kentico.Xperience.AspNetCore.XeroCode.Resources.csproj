@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <Version>0.1.0</Version>
+    <Product>Kentico Xperience Xero Code Resources</Product>
+    <Authors>Yuriy Sountsov</Authors>
+    <PackageId>KenticoXperience.AspNetCore.XeroCode.Resources</PackageId>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageOutputPath>../</PackageOutputPath>
+    <PackageIcon>Icon.png</PackageIcon>
+    <PackageTags>kentico xperience mvc api localization code cms</PackageTags>
+    <Description>Localization support for Xero Code for Kentico Xperience 13.</Description>
+    <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);Libraries</TargetsForTfmSpecificBuildOutput>
+  </PropertyGroup>
+
+  <Target Name="Libraries">
+    <ItemGroup>
+      <BuildOutputInPackage Include="$(OutputPath)Kentico.Xperience.AspNetCore.XeroCode.Resources.Core.dll" />
+    </ItemGroup>
+  </Target>
+  
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" PrivateAssets="all" />
+    <ProjectReference Include="..\Kentico.Xperience.AspNetCore.XeroCode.Resources.Core\Kentico.Xperience.AspNetCore.XeroCode.Resources.Core.csproj"  PrivateAssets="all" />
+    <None Include="Icon.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
+</Project>
