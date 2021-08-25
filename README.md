@@ -44,3 +44,6 @@ Marketers can set the name, description, icon, properties, and view of widgets. 
 1. Use the UI to create widgets.
 1. Open **Pages**.
 1. Navigate to a page with the page builder feature and add any of the created widgets.
+
+## Allowing Xero Widgets in Sections
+If you restrict what widgets are allowed in an editable area but you wish to allow the XeroCodeWidget identifiers through the `IWidgetStore`'s `Widgets` Dictionary, either through the  `Widgets.Keys` property or individually in the `Widgets[Key].Guid`.  
