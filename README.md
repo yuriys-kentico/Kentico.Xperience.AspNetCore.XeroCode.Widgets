@@ -18,6 +18,12 @@ Xero Code Widgets is an extension for Kentico Xperience 13 that allows marketers
 
 Marketers can set the name, description, icon, properties, and view of widgets. Properties can use a subset of the [available form components ](https://docs.xperience.io/developing-websites/form-builder-development/reference-system-form-components) and can have a default value, a label, a tooltip, and an explanation. The view is any Razor syntax where the property values are available in `@Model.Properties.*` by property name.
 
+```razor
+<!-- Sample view with Name and Content properties -->
+<h1>@Model.Properties.Name</h1>
+<p>@Model.Properties.Content</p>
+```
+
 ## Requirements and prerequisites
 
 - _Kentico Xperience 13_ installed.
@@ -32,7 +38,7 @@ Marketers can set the name, description, icon, properties, and view of widgets. 
 1. In the **NuGet Package Manager Console**, run `Install-Package KenticoXperience.AspNetCore.XeroCode.Widgets`.
 1. In _Startup.cs_ locate the **ConfigureServices** method.
 1. In that method, there should already be a call to `AddControllersWithViews()`. In the chain after this call, add a call to `AddXeroCodeWidgets()` (the extension method is in the`Kentico.Xperience.AspNetCore.XeroCode.Widgets.Extensions` namespace).
-1. There should also already be a call to `services.AddKentico` with an arrow function with a body. If there is no arrow function with a body, define one. In the body, add a call to `services.UseXeroCodeWidgets()`.
+1. There should also already be a call to `services.AddKentico` with an arrow function with a body. If there is no arrow function with a body, define one. In the body, add a call to `services.UseXeroCodeWidgets()` (must reference the `IServicesCollection` and not the `IFeaturesBuilder`)
 1. Build and run in IIS Express, or publish the project where it is hosted.
 1. In the admin, open **Xero code widgets**. You may need to set up permissions to see the application if you are not an administrator.
 1. Use the UI to create widgets.
